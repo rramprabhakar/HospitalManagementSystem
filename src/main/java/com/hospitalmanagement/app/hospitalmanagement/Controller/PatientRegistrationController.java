@@ -7,13 +7,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+
+/***
+ *
+ */
 @RestController
 public class PatientRegistrationController {
 
     @Autowired
     PatientRegistrationService patientregistrationService;
 
-
+    /***
+     *
+     * @param patientVO
+     * @return
+     */
     @PostMapping(value = "/patientRegistration")
     public String register(@RequestBody final PatientVO patientVO){
 
