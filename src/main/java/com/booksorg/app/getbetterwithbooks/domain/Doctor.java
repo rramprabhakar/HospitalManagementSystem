@@ -1,4 +1,4 @@
-package com.hospitalmanagement.app.hospitalmanagement.domain;
+package com.booksorg.app.getbetterwithbooks.domain;
 
 public class Doctor {
     Long id;

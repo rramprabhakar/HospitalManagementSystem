@@ -8,11 +8,11 @@
         <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.hospitalmanagement.app</groupId>
-    <artifactId>hospitalmanagement</artifactId>
+    <groupId>com.getbetterwithbooks.app</groupId>
+    <artifactId>getbetterwithbooks</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hospitalmanagement</name>
-    <description>Hospital Management System</description>
+    <name>getbetterwithbooks</name>
+    <description>Get Better With Books</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -71,6 +71,16 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 

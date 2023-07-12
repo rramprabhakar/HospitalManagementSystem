@@ -1,8 +1,8 @@
-package com.hospitalmanagement.app.hospitalmanagement.service;
-import com.hospitalmanagement.app.hospitalmanagement.dto.PatientVO;
-
+package com.booksorg.app.getbetterwithbooks.service;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.booksorg.app.getbetterwithbooks.dto.PatientVO;
 
 public class Validation {
 

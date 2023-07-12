@@ -1,4 +1,4 @@
-package com.hospitalmanagement.app.hospitalmanagement.dto;
+package com.booksorg.app.getbetterwithbooks.dto;
 
 
 import java.util.Date;
