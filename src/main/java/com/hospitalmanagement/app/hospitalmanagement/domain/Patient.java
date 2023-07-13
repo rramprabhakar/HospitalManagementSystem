@@ -1,4 +1,4 @@
-package com.booksorg.app.getbetterwithbooks.domain;
+package com.hospitalmanagement.app.hospitalmanagement.domain;
 
 
 import javax.persistence.*;

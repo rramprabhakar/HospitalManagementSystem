@@ -1,19 +1,17 @@
-package com.booksorg.app.getbetterwithbooks.service;
+package com.hospitalmanagement.app.hospitalmanagement.service;
 
+import com.hospitalmanagement.app.hospitalmanagement.dao.PatientRepository;
+import com.hospitalmanagement.app.hospitalmanagement.domain.Patient;
+import com.hospitalmanagement.app.hospitalmanagement.dto.PatientVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.booksorg.app.getbetterwithbooks.dao.PatientRepository;
-import com.booksorg.app.getbetterwithbooks.domain.Patient;
-import com.booksorg.app.getbetterwithbooks.dto.PatientVO;
-import com.booksorg.app.getbetterwithbooks.enums.RegistrationStatus;
-
 import javax.transaction.Transactional;
 
-import static com.booksorg.app.getbetterwithbooks.service.Validation.doValidation;
-
 import java.util.List;
+
+import static com.hospitalmanagement.app.hospitalmanagement.service.Validation.doValidation;
 
 
 @Transactional
@@ -23,7 +21,7 @@ public class PatientRegistrationServiceImpl implements PatientRegistrationServic
     @Autowired
     private PatientRepository patientRepository;
 
-    public String saveRegistration(PatientVO patientVO, RegistrationStatus status) {
+    public String saveRegistration(PatientVO patientVO, String status) {
 
         List<String> errorMessages = Validation.doValidation(patientVO);
         Patient patient = new Patient();
